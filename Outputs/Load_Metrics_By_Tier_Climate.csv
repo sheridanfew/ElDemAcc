@@ -1,0 +1,11 @@
+climate,tier,daily_energy,daily_energy_stdev_across_users,daily_energy_stdev_across_days,daily_energy_stdev_across_days_and_users,peak_load,peak_load_stdev_across_users,peak_load_stdev_across_days,peak_load_stdev_across_days_and_users,load_factor,load_factor_stdev_across_users,coincidence_factor,PV_overlap,PV_overlap_stdev_across_users,seasonal_consistency,seasonal_consistency_stdev_across_users
+HSub,1,24,1,1,6,5,1,0,6,0.20,0.52,0.14,0.19,0.02,0.74,0.07
+TSav,1,23,1,1,6,5,0,0,6,0.20,0.42,0.14,0.19,0.02,0.76,0.06
+HSub,2,494,42,132,233,98,5,8,233,0.21,0.40,0.49,0.36,0.03,0.54,0.07
+TSav,2,349,41,42,186,88,8,7,186,0.16,0.48,0.37,0.37,0.03,0.51,0.06
+HSub,3,1621,124,739,871,204,6,34,871,0.33,0.67,0.73,0.38,0.02,0.39,0.05
+TSav,3,780,80,110,351,175,25,31,351,0.19,0.65,0.43,0.41,0.02,0.64,0.08
+HSub,4,2110,143,780,983,731,94,69,983,0.12,0.28,0.29,0.42,0.02,0.47,0.05
+TSav,4,1248,138,156,548,696,76,68,548,0.07,0.20,0.21,0.47,0.02,0.61,0.07
+HSub,5,6366,685,4202,5076,2016,261,341,5076,0.13,0.38,0.54,0.46,0.02,0.30,0.06
+TSav,5,2773,421,448,1623,1627,248,273,1623,0.07,0.28,0.28,0.52,0.03,0.53,0.07

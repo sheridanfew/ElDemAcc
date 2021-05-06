@@ -1,0 +1,4 @@
+"end_user","daily_energy","daily_energy_stdev_across_days","daily_energy_stdev_across_users","daily_energy_stdev_across_days_and_users","peak_load","peak_load_stdev_across_users","load_factor","load_factor_stdev_across_users","pv_overlap","pv_overlap_stdev_across_users","seasonal_consistency","seasonal_consistency_stdev_across_users","coincidence_factor"
+"Fan",138.41095890411,157.231179591124,NA,NA,24,NA,0.240296803652968,NA,0.362881995970418,NA,0.0769230769230769,NA,NA
+"Rice Mill",9030.82191780822,4883.77014826218,NA,NA,2250,NA,0.167237442922374,NA,0.724932457697352,NA,0.411764705882353,NA,NA
+"Irrigation Pump",9030.82191780822,4883.77014826218,NA,NA,2250,NA,0.167237442922374,NA,0.711415420171325,NA,0.411764705882353,NA,NA

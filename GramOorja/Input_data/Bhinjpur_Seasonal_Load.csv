@@ -1,0 +1,217 @@
+hour_in_day,Device,Season,hourly_usage_wh
+1,Fan,Oct - Jan,0
+2,Fan,Oct - Jan,0
+3,Fan,Oct - Jan,0
+4,Fan,Oct - Jan,0
+5,Fan,Oct - Jan,0
+6,Fan,Oct - Jan,0
+7,Fan,Oct - Jan,0
+8,Fan,Oct - Jan,0
+9,Fan,Oct - Jan,0
+10,Fan,Oct - Jan,0
+11,Fan,Oct - Jan,0
+12,Fan,Oct - Jan,0
+13,Fan,Oct - Jan,0
+14,Fan,Oct - Jan,0
+15,Fan,Oct - Jan,0
+16,Fan,Oct - Jan,0
+17,Fan,Oct - Jan,0
+18,Fan,Oct - Jan,0
+19,Fan,Oct - Jan,0
+20,Fan,Oct - Jan,0
+21,Fan,Oct - Jan,0
+22,Fan,Oct - Jan,0
+23,Fan,Oct - Jan,0
+24,Fan,Oct - Jan,0
+1,Fan,Feb - May,1440
+2,Fan,Feb - May,1440
+3,Fan,Feb - May,1440
+4,Fan,Feb - May,1440
+5,Fan,Feb - May,0
+6,Fan,Feb - May,0
+7,Fan,Feb - May,0
+8,Fan,Feb - May,0
+9,Fan,Feb - May,0
+10,Fan,Feb - May,0
+11,Fan,Feb - May,1440
+12,Fan,Feb - May,1440
+13,Fan,Feb - May,1440
+14,Fan,Feb - May,1440
+15,Fan,Feb - May,1440
+16,Fan,Feb - May,1440
+17,Fan,Feb - May,0
+18,Fan,Feb - May,0
+19,Fan,Feb - May,0
+20,Fan,Feb - May,1440
+21,Fan,Feb - May,1440
+22,Fan,Feb - May,1440
+23,Fan,Feb - May,1440
+24,Fan,Feb - May,1440
+1,Fan,Jun - Sep,240
+2,Fan,Jun - Sep,240
+3,Fan,Jun - Sep,240
+4,Fan,Jun - Sep,240
+5,Fan,Jun - Sep,0
+6,Fan,Jun - Sep,0
+7,Fan,Jun - Sep,0
+8,Fan,Jun - Sep,0
+9,Fan,Jun - Sep,0
+10,Fan,Jun - Sep,0
+11,Fan,Jun - Sep,240
+12,Fan,Jun - Sep,240
+13,Fan,Jun - Sep,240
+14,Fan,Jun - Sep,240
+15,Fan,Jun - Sep,240
+16,Fan,Jun - Sep,240
+17,Fan,Jun - Sep,0
+18,Fan,Jun - Sep,0
+19,Fan,Jun - Sep,0
+20,Fan,Jun - Sep,240
+21,Fan,Jun - Sep,240
+22,Fan,Jun - Sep,240
+23,Fan,Jun - Sep,240
+24,Fan,Jun - Sep,240
+1,Rice Mill,Oct - Jan,0
+2,Rice Mill,Oct - Jan,0
+3,Rice Mill,Oct - Jan,0
+4,Rice Mill,Oct - Jan,0
+5,Rice Mill,Oct - Jan,0
+6,Rice Mill,Oct - Jan,0
+7,Rice Mill,Oct - Jan,0
+8,Rice Mill,Oct - Jan,0
+9,Rice Mill,Oct - Jan,2250
+10,Rice Mill,Oct - Jan,2250
+11,Rice Mill,Oct - Jan,2250
+12,Rice Mill,Oct - Jan,2250
+13,Rice Mill,Oct - Jan,2250
+14,Rice Mill,Oct - Jan,2250
+15,Rice Mill,Oct - Jan,2250
+16,Rice Mill,Oct - Jan,0
+17,Rice Mill,Oct - Jan,0
+18,Rice Mill,Oct - Jan,0
+19,Rice Mill,Oct - Jan,0
+20,Rice Mill,Oct - Jan,0
+21,Rice Mill,Oct - Jan,0
+22,Rice Mill,Oct - Jan,0
+23,Rice Mill,Oct - Jan,0
+24,Rice Mill,Oct - Jan,0
+1,Rice Mill,Feb - May,0
+2,Rice Mill,Feb - May,0
+3,Rice Mill,Feb - May,0
+4,Rice Mill,Feb - May,0
+5,Rice Mill,Feb - May,0
+6,Rice Mill,Feb - May,0
+7,Rice Mill,Feb - May,0
+8,Rice Mill,Feb - May,0
+9,Rice Mill,Feb - May,0
+10,Rice Mill,Feb - May,0
+11,Rice Mill,Feb - May,2250
+12,Rice Mill,Feb - May,2250
+13,Rice Mill,Feb - May,2250
+14,Rice Mill,Feb - May,0
+15,Rice Mill,Feb - May,0
+16,Rice Mill,Feb - May,0
+17,Rice Mill,Feb - May,0
+18,Rice Mill,Feb - May,0
+19,Rice Mill,Feb - May,0
+20,Rice Mill,Feb - May,0
+21,Rice Mill,Feb - May,0
+22,Rice Mill,Feb - May,0
+23,Rice Mill,Feb - May,0
+24,Rice Mill,Feb - May,0
+1,Rice Mill,Jun - Sep,0
+2,Rice Mill,Jun - Sep,0
+3,Rice Mill,Jun - Sep,0
+4,Rice Mill,Jun - Sep,0
+5,Rice Mill,Jun - Sep,0
+6,Rice Mill,Jun - Sep,0
+7,Rice Mill,Jun - Sep,0
+8,Rice Mill,Jun - Sep,0
+9,Rice Mill,Jun - Sep,0
+10,Rice Mill,Jun - Sep,0
+11,Rice Mill,Jun - Sep,0
+12,Rice Mill,Jun - Sep,0
+13,Rice Mill,Jun - Sep,2250
+14,Rice Mill,Jun - Sep,2250
+15,Rice Mill,Jun - Sep,0
+16,Rice Mill,Jun - Sep,0
+17,Rice Mill,Jun - Sep,0
+18,Rice Mill,Jun - Sep,0
+19,Rice Mill,Jun - Sep,0
+20,Rice Mill,Jun - Sep,0
+21,Rice Mill,Jun - Sep,0
+22,Rice Mill,Jun - Sep,0
+23,Rice Mill,Jun - Sep,0
+24,Rice Mill,Jun - Sep,0
+1,Irrigation Pump,Oct - Jan,0
+2,Irrigation Pump,Oct - Jan,0
+3,Irrigation Pump,Oct - Jan,0
+4,Irrigation Pump,Oct - Jan,0
+5,Irrigation Pump,Oct - Jan,0
+6,Irrigation Pump,Oct - Jan,0
+7,Irrigation Pump,Oct - Jan,0
+8,Irrigation Pump,Oct - Jan,0
+9,Irrigation Pump,Oct - Jan,2250
+10,Irrigation Pump,Oct - Jan,2250
+11,Irrigation Pump,Oct - Jan,2250
+12,Irrigation Pump,Oct - Jan,2250
+13,Irrigation Pump,Oct - Jan,2250
+14,Irrigation Pump,Oct - Jan,2250
+15,Irrigation Pump,Oct - Jan,2250
+16,Irrigation Pump,Oct - Jan,0
+17,Irrigation Pump,Oct - Jan,0
+18,Irrigation Pump,Oct - Jan,0
+19,Irrigation Pump,Oct - Jan,0
+20,Irrigation Pump,Oct - Jan,0
+21,Irrigation Pump,Oct - Jan,0
+22,Irrigation Pump,Oct - Jan,0
+23,Irrigation Pump,Oct - Jan,0
+24,Irrigation Pump,Oct - Jan,0
+1,Irrigation Pump,Feb - May,0
+2,Irrigation Pump,Feb - May,0
+3,Irrigation Pump,Feb - May,0
+4,Irrigation Pump,Feb - May,0
+5,Irrigation Pump,Feb - May,0
+6,Irrigation Pump,Feb - May,0
+7,Irrigation Pump,Feb - May,0
+8,Irrigation Pump,Feb - May,0
+9,Irrigation Pump,Feb - May,0
+10,Irrigation Pump,Feb - May,0
+11,Irrigation Pump,Feb - May,2250
+12,Irrigation Pump,Feb - May,2250
+13,Irrigation Pump,Feb - May,2250
+14,Irrigation Pump,Feb - May,0
+15,Irrigation Pump,Feb - May,0
+16,Irrigation Pump,Feb - May,0
+17,Irrigation Pump,Feb - May,0
+18,Irrigation Pump,Feb - May,0
+19,Irrigation Pump,Feb - May,0
+20,Irrigation Pump,Feb - May,0
+21,Irrigation Pump,Feb - May,0
+22,Irrigation Pump,Feb - May,0
+23,Irrigation Pump,Feb - May,0
+24,Irrigation Pump,Feb - May,0
+1,Irrigation Pump,Jun - Sep,0
+2,Irrigation Pump,Jun - Sep,0
+3,Irrigation Pump,Jun - Sep,0
+4,Irrigation Pump,Jun - Sep,0
+5,Irrigation Pump,Jun - Sep,0
+6,Irrigation Pump,Jun - Sep,0
+7,Irrigation Pump,Jun - Sep,0
+8,Irrigation Pump,Jun - Sep,0
+9,Irrigation Pump,Jun - Sep,0
+10,Irrigation Pump,Jun - Sep,0
+11,Irrigation Pump,Jun - Sep,2250
+12,Irrigation Pump,Jun - Sep,2250
+13,Irrigation Pump,Jun - Sep,0
+14,Irrigation Pump,Jun - Sep,0
+15,Irrigation Pump,Jun - Sep,0
+16,Irrigation Pump,Jun - Sep,0
+17,Irrigation Pump,Jun - Sep,0
+18,Irrigation Pump,Jun - Sep,0
+19,Irrigation Pump,Jun - Sep,0
+20,Irrigation Pump,Jun - Sep,0
+21,Irrigation Pump,Jun - Sep,0
+22,Irrigation Pump,Jun - Sep,0
+23,Irrigation Pump,Jun - Sep,0
+24,Irrigation Pump,Jun - Sep,0
