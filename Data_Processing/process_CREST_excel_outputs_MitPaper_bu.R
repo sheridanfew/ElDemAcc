@@ -482,16 +482,11 @@ Sys.sleep(1)
 # Generate df with a years worth of hours to add load data alongside
 
 start_date <- dmy_hms("01/01/2019 00:00:00 AM")
-end_date <- dmy_hms("31/12/2019 00:00:00 AM")
+end_date <- dmy_hms("31/12/2019 23:00:00 PM")
 
-time_sequence <- seq(start_date,end_date, by = '1 day')
+time_sequence <- seq(start_date,end_date, by = '1 hour')
 
-time_data<-cbind(month=month(time_sequence),weekday_status=isWeekday(time_sequence))
-
-hourly_start_date <- dmy_hms("01/01/2019 00:00:00 AM")
-hourly_end_date <- dmy_hms("31/12/2019 23:00:00 PM")
-hourly_time_sequence <- seq(start_date,end_date, by = '1 hour')
-hourly_time_data<-cbind(hour_tot=c(1:8760),month=month(hourly_time_sequence),day=day(hourly_time_sequence),weekday_status=isWeekday(hourly_time_sequence),hour_in_day=hour(hourly_time_sequence))
+time_data<-cbind(hour_tot=c(1:8760),month=month(time_sequence),day=day(time_sequence),weekday_status=isWeekday(time_sequence),hour_in_day=hour(time_sequence))
 
 
 # # Add hourly load data for each village and tier (based on hour of day, month, and wd/we status) and export
@@ -534,26 +529,35 @@ annual_hourly_load_by_village_tier_dwelling<-lapply(villages, function(village){
 	load_data_by_tier<-lapply(tiers, function(tier){
 		print(paste('Generating hourly load across year by dwelling for ',village,' tier ',tier,sep=''))
 		load_data_by_dwelling<-lapply(dwelling_indices, function(dwelling){
-			load_by_day<-apply(time_data, 1, function(day_info){
-				month=day_info[1]
-				daytype<-gsub(day_info[2], pattern = 1, replacement = "wd")
-				daytype<-gsub(daytype, pattern = 0, replacement = "we")
+			hour_load<-apply(time_data, 1, function(x){
+				# Get load for every hour of the year based on village, month, wd/we status
+				# I think this part is very slow - probably looping over each hour and looking up data is slowing it down a lot - would be more elegant to add a whole day at a time
+				month<-as.character(x[2])
+				weekday_status<-x[4]
+				hour<-x[5]
 
-				return(cbind(hourly_climatic_load_data_by_village_tier_month_daytype_dwelling_index[[village]][[as.character(tier)]][[as.character(month)]][[daytype]][[dwelling]][-1][-1],
-							Appliance_Load=aggregated_hourly_load_data_by_tier_daytype_dwelling_index[[as.character(tier)]][[daytype]][[dwelling]][-1][-1]))
+				if(weekday_status == 1)
+				{
+					daytype = 'wd'
+				} else {
+					daytype = 'we'
+				}
+				return(cbind(hourly_climatic_load_data_by_village_tier_month_daytype_dwelling_index[[village]][[as.character(tier)]][[as.character(month)]][[daytype]][[dwelling]][-1][-1][hour+1,],
+							 Appliance_Load=aggregated_hourly_load_data_by_tier_daytype_dwelling_index[[as.character(tier)]][[daytype]][[dwelling]][-1][-1][hour+1,]))
+					
 			})
 
 			# Reshape data into one df
-			year_data<-do.call(rbind,load_by_day)
+			hour_load<-do.call(rbind,hour_load)
 
 
 			# Export aggregated load to csv 
-			aggregated_load<-rowSums(year_data)
-			aggregated_load_w_time<-cbind(hourly_time_data,aggregated_load)
+			aggregated_load<-rowSums(hour_load)
+			aggregated_load_w_time<-cbind(time_data,aggregated_load)
 			colnames(aggregated_load_w_time)<-c('hour_tot','month','day','weekday_status','hour','load')
 			write.table(aggregated_load_w_time, paste(processed_load_path,'Annual_Hourly_Load_By_Village_Tier_Dwelling/',village,'_Tier',tier,'_dwelling',dwelling,'_annual_hourly.csv',sep=''), sep=",", row.names=FALSE)
 
-			df<-cbind(hourly_time_data,year_data)
+			df<-cbind(time_data,hour_load)
 			return(df)
 		})	
 		return(load_data_by_dwelling)
