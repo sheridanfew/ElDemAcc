@@ -31,12 +31,12 @@ dir.create(processed_load_path, showWarnings = FALSE)
 dir.create(output_path, showWarnings = FALSE)
 dir.create(plot_path, showWarnings = FALSE)
 
-dir.create(paste(processed_load_path,'Full_Demand_Data/'), showWarnings = FALSE)
+dir.create(paste(processed_load_path,'Full_Demand_Data/',sep=''), showWarnings = FALSE)
 # dir.create(paste(processed_load_path,'Annual_Hourly_Load_By_Village_Tier/'), showWarnings = FALSE)
-dir.create(paste(processed_load_path,'Annual_Hourly_Load_By_Village_Tier_Dwelling/'), showWarnings = FALSE)
+dir.create(paste(processed_load_path,'Annual_Hourly_Load_By_Village_Tier_Dwelling/',sep=''), showWarnings = FALSE)
 
-dir.create(paste(processed_load_path,'Total_Annual_Device_Load_By_Village_Tier/'), showWarnings = FALSE)
-dir.create(paste(processed_load_path,'Load_By_Tier/'), showWarnings = FALSE)
+dir.create(paste(processed_load_path,'Total_Annual_Device_Load_By_Village_Tier/',sep=''), showWarnings = FALSE)
+dir.create(paste(processed_load_path,'Load_By_Tier/',sep=''), showWarnings = FALSE)
 
 
 
