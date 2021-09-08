@@ -5,6 +5,10 @@ This repository contains scripts used to:
 (1) simulate and analyse data in an electricity access context
 (2) optimise a microgrid system to meet these loads aceoss scenarios
 
+If these scripts have been useful to you, please cite the following:
+
+Sheridan Few, John Barton, Philip Sandwell, Richard Mori, Prasad Kulkarni, Murray Thomson, Jenny Nelson, Chiara Candelise, “Electricity demand in populations gaining access: impact of rurality and climatic conditions, and implications for microgrid design” (manuscript submitted)
+
 ## Overview 
 
 - Run specific scripts to generate CREST data, and process MEshpower, Gram Oorja, and CREST data, as oulined in separate secton
