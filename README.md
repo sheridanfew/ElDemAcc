@@ -19,7 +19,7 @@ Sheridan Few, John Barton, Philip Sandwell, Richard Mori, Prasad Kulkarni, Murra
 
 ## CREST Demand model
 
-- An adapted version of the CREST demand model is used to simulate electricity demand for 25 households across:
+- An adapted version of the CREST demand model is included in 1_CREST_Load_Model_MTF_Bhinjpur.xlsm and 1_CREST_Load_Model_MTF_Gitaraga.xlsm. This is used to simulate electricity demand for 25 households across:
 	- five energy access tiers,
 	- two climatic conditions
 	- week day and weekedns
@@ -37,16 +37,16 @@ In excel (Goal here was minimise effort in excel and carry out most processing u
 - Run the “Iterate and Export” macro to generate outputs for one day of each month 1 to 12 at each tier 1 - 5.
 
 Post-excel:
-- xls_to_csvs.sh: Shell script to update directory in second line to that of ‘Excel_Outputs’ on local dir
-- Run shell script xls_to_csvs.sh to convert excel outputs to csvs and rename them
-- Run process_CREST_excel_outputs.R to generate hourly load profiles across 2019 across business types and households
+- 2_xls_to_csvs.sh: Shell script to update directory in second line to that of ‘Excel_Outputs’ on local dir
+- Run shell script 2_xls_to_csvs.sh to convert excel outputs to csvs and rename them
+- Run 3_process_CREST_excel_outputs.R to generate hourly load profiles across 2019 across business types and households
 - This script also characterised constitutent loads according to a range of standard metrics
 
 
 ## Gram Oorja data
 
 - Seasonal data on rice mills, water pumps, and fans are taken from Gram Oorja estimates
-- These are processed into hourly load for an entire year by device, in a similar format to that used for CREST data, using the process_GO_data.R script
+- These are processed into hourly load for an entire year by device, in a similar format to that used for CREST data, using the 4_process_GO_data.R script
 - This script also characterises constitutent loads according to a range of standard metrics
 
 ## Meshpower data
@@ -54,7 +54,7 @@ Post-excel:
 - In conducting this study, real measued data from domestic and business customers connected to the Gitaraga microgrid was analysed and used to inform design of a microgrid system.
 - In order to maintain confidentiality, raw data is not included in this repository, only aggregate properties and load data for the microgrid as a whole. Please get in touch if you are interested in this data as I have developed some tools to download this from servers and convert it into a useable form (with Meshpower's permission)
 - Data here have already undergone a process to obtain hourly loads per customer from the meshpower database (detailed elsewhere)
-- process_Mespower_loads.R was used to generate processed loads from raw data, but will not work here as raw data is excluded (processed data is included to facilitate running of later scripts)
+- 4_process_Mespower_loads.R was used to generate processed loads from raw data, but will not work here as raw data is excluded (processed data is included to facilitate running of later scripts)
 
 ## Data processing
 
@@ -64,11 +64,11 @@ Post-excel:
 
 ## CLOVER Microgrid Simulation and Optimisation (see also: CLOVER-hpc respository)
 
-- CLOVER readable load profiles are generated in the "Outputs/" dir using the "make_and_plot_CLOVER_load_profiles.R" script
+- CLOVER readable load profiles are generated in the "Outputs/" dir using the "5_make_and_plot_CLOVER_load_profiles.R" script
 - These are included in CLOVER location files in the CLOVER directory.
-
-- The script "make_demand_paper_jobs.sh" is to be run on the HPC to generate job files to optimise the system based upon each of the generated microgrid load profiles. (Instructions on steps to carry out before running this script are outlined in the header to the script).
-- These are launched using commands in launch_demand_paper_CLOVER_jobs_hpc.sh (which will need to be edited for any new set of jobs, as described in the header to this script)
-- Results should be copied back from the hpc into the "CLOVER/Optimisation_Results/" folder
-- Results can be analysed using CLOVER_run_info_demand_paper.sh, which will need editing to reflect local paths and choice of scenarios. This generates a file "CLOVER_run_info_summarised.csv" in Outputs which is used for the next stage of processing
-- CLOVER results are then copied back from HPC, analysed, and plots produced using the "Process_CLOVER_Outputs.R" script.
+- Follow instructions in script "6_make_demand_paper_jobs.sh" to transfer CLOVER load profiles to HPC to generate job files to optimise the system based upon each of the generated microgrid load profiles. (Instructions on steps to carry out before running this script are outlined in the header to the script).
+- These are launched using commands in 7_launch_demand_paper_CLOVER_jobs_hpc.sh (which will need to be edited for any new set of jobs, as described in the header to this script)
+- Results should be copied back from the hpc into the "CLOVER/Optimisation_Results/" folder 
+(example command: scp hpc:/rds/general/user/spf310/home/CLOVER-hpc/Results/DemandPaper_*/*/*csv .)
+- Results can be analysed using 8_CLOVER_run_info_demand_paper.sh, which will need editing to reflect local paths and choice of scenarios. This generates a file "CLOVER_run_info.csv" in Outputs which can be manuall adapted to the format in "CLOVER_run_info_summarised.csv", used for the next stage of processing.
+- CLOVER results are then copied back from HPC, analysed, and plots produced using the "9_Process_CLOVER_Outputs.R" script.
