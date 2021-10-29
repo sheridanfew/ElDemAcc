@@ -14,7 +14,7 @@ Sheridan Few, John Barton, Philip Sandwell, Richard Mori, Prasad Kulkarni, Murra
 - Run specific scripts to generate CREST data, and process MEshpower, Gram Oorja, and CREST data, as oulined in separate secton
 - Generate CLOVER profiles with load processing script (also generates input lines defining ranges considered in CLOVER optimistion based on max daily load by context)
 - Analyse and produce plots based upon this data and results of simulations/optimisations
-- Home pa
+- Home paths will need to be updated to reflect your local directory structure
 - NB. Names were changed for climates (’temperate’ -> tropical savannah’, ‘extreme’ -> ’humid substropical’) and rurality conditions (‘accessibility’ -> ’rurality’, ‘acessible’ -> ‘peri-urban’, ‘remote’ -> ‘rural’) relatively late, therefore while plots use the revised terminology, many variables use the old terminology.
 
 ## CREST Demand model
@@ -37,10 +37,17 @@ In excel (Goal here was minimise effort in excel and carry out most processing u
 - Run the “Iterate and Export” macro to generate outputs for one day of each month 1 to 12 at each tier 1 - 5.
 
 Post-excel:
+<<<<<<< HEAD
 - 2_xls_to_csvs.sh: Shell script to update directory in second line to that of ‘Excel_Outputs’ on local dir
 - Run shell script 2_xls_to_csvs.sh to convert excel outputs to csvs and rename them
 - Run 3_process_CREST_excel_outputs.R to generate hourly load profiles across 2019 across business types and households
 - This script also characterised constitutent loads according to a range of standard metrics
+=======
+- xls_to_csvs.sh: Shell script to update directory in second line to that of ‘Excel_Outputs’ on local dir
+- Run shell script xls_to_csvs.sh to convert excel outputs to csvs and rename them
+- Run process_CREST_excel_outputs.R to generate hourly load profiles across 2019 across business types and households
+- This script also characterises constitutent loads according to a range of standard metrics
+>>>>>>> 2cb127e68496cd519063e65f127d6a224e8499d0
 
 
 ## Gram Oorja data
